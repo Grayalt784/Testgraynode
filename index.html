@@ -2,31 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GRAYNODES Login</title>
   <style>
     html, body {
       height: 100%;
       margin: 0;
-      padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
-    }
-
-    body {
       background: black url('Graynode.png') no-repeat center center fixed;
-      background-size: contain;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background-size: cover;
+      overflow: hidden;
+      position: relative;
     }
 
     .login-container {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
       background-color: rgba(0, 0, 0, 0.75);
       padding: 40px;
       border-radius: 10px;
-      width: 90%;
-      max-width: 320px;
+      width: 320px;
       box-shadow: 0 0 15px #00ff00;
     }
 
@@ -69,18 +66,6 @@
 
     .register:hover {
       background-color: #005fa3;
-    }
-
-    @media only screen and (orientation: portrait) {
-      body {
-        background-size: contain;
-      }
-    }
-
-    @media only screen and (orientation: landscape) {
-      body {
-        background-size: cover;
-      }
     }
   </style>
 </head>
